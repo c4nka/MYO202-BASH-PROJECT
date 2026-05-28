@@ -3,12 +3,12 @@
 # Öğrenci Numarası: 2420191006
 # Docker Temelleri Sertifika : https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=mKEhkMVpBA
 # Siber Güvenlikte Linux İşletim Sistemleri Sertifika : https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=XV1hBlpNPx
-# Sertifika 3:
+# Linux Bash Script Eğitimi Sertifika : https://credsverse.com/credentials/d7ee7a97-06c2-43cf-8ec9-161b49dce0a3
 
-# 1. ISO formatında tarih ve saat ile report.log dosyasını oluşturma
+# 1
 date -Iseconds > report.log
 
-# 2. Windows donanım bilgilerini report.log dosyasına ekleme
+# 2
 echo "" >> report.log
 echo "=== DONANIM BILGILERI ===" >> report.log
 
@@ -28,14 +28,14 @@ echo "--- MAC Adresi ---" >> report.log
 getmac >> report.log
 echo "=========================" >> report.log
 
-# 3. Kullanıcıdan parola alma
+# 3
 echo -n "Lütfen parolayı giriniz: "
 read PAROLA
 
-# 4. GPG ile AES256 formatında şifreleme
+# 4
 gpg --batch --yes --passphrase "$PAROLA" --symmetric --cipher-algo AES256 -o report.log.gpg report.log
 
-# 5. Orijinal şifresiz dosyayı silme
+# 5
 rm report.log
 
 echo "Islem tamamlandi. Log dosyasi sifrelendi ve orijinal dosya silindi."
