@@ -1,8 +1,8 @@
 #!/bin/bash
 # Raşit ÇANKAYA
 # Öğrenci Numarası: 2420191006
-# Sertifika 1:
-# Sertifika 2:
+# Docker Temelleri Sertifika : https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=mKEhkMVpBA
+# Siber Güvenlikte Linux İşletim Sistemleri Sertifika : https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=XV1hBlpNPx
 # Sertifika 3:
 
 # 1. ISO formatında tarih ve saat ile report.log dosyasını oluşturma
