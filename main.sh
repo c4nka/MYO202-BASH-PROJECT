@@ -24,6 +24,9 @@ wmic baseboard get product,Manufacturer >> report.log
 echo "--- UUID ---" >> report.log
 wmic csproduct get uuid >> report.log
 
+echo "--- Disk Bilgileri ---" >> report.log
+wmic diskdrive get model,size >> report.log
+
 echo "--- MAC Adresi ---" >> report.log
 getmac >> report.log
 echo "=========================" >> report.log
